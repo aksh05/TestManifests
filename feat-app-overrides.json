@@ -1530,6 +1530,11 @@
   "name": "YouTube_test",
   "accentColor": "#ff0000",
   "amsSellerAccountId": 10100100,
+
+                "supportedChannelTypes": [
+                    "SharedChannels",
+                    "PrivateChannels"
+                ],
   "authorization": {
     "permissions": {
       "resourceSpecific": [
@@ -1693,8 +1698,297 @@
   "webApplicationInfo": {
     "id": "ab3be6b7-f5df-413d-ac2d-abf1e3fd9c0b",
     "resource": "https://tabs.teams.microsoft.com"
+  }
+},
+  {
+  "manifestVersion": "1.12",
+  "id": "com.microsoft.teamspace.tab.planner",
+  "version": "1.3.1",
+  "name": "Planner",
+  "accentColor": "#6264A7",
+
+                "supportedChannelTypes": [
+                    "SharedChannels",
+                    "PrivateChannels"
+                ],
+  "activities": {
+    "activityTypes": [
+      {
+        "description": "Urgent task published to your team",
+        "templateText": "URGENT! Urgent task for your team from {publishingTeamName}",
+        "type": "NewUrgentTaskPublished"
+      },
+      {
+        "description": "Task re-published and upgraded to urgent",
+        "templateText": "URGENT! Task marked urgent by {publishingTeamName}",
+        "type": "UpgradePublishedTaskToUrgent"
+      },
+      {
+        "description": "Task re-published and downgraded from urgent",
+        "templateText": "Previously urgent task made not urgent by {publishingTeamName}",
+        "type": "DowngradeUrgentPublishedTask"
+      },
+      {
+        "description": "Task re-published and deleted from publication",
+        "templateText": "An urgent task was removed by {publishingTeamName}",
+        "type": "DeleteUrgentPublishedTask"
+      },
+      {
+        "description": "Task assigned to you",
+        "templateText": "{User} assigned you a task",
+        "type": "TaskAssignedToYouG"
+      },
+      {
+        "description": "Task assigned to you was updated",
+        "templateText": "{User} made an update to your task",
+        "type": "TaskAssignedWasUpdatedG"
+      },
+      {
+        "description": "Your task status changed to complete",
+        "templateText": "{User} marked your task Completed",
+        "type": "YourTaskChangedToCompletedG"
+      },
+      {
+        "description": "Your task status changed to in progress",
+        "templateText": "{User} marked your task In progress",
+        "type": "YourTaskChangedToInProgressG"
+      },
+      {
+        "description": "Your task status changed to not started",
+        "templateText": "{User} marked your task Not started",
+        "type": "YourTaskChangedToNotStartedG"
+      },
+      {
+        "description": "Task assigned to you was reassigned",
+        "templateText": "{User} removed you from a task",
+        "type": "TaskAssignedToYouWasReassignedG"
+      },
+      {
+        "description": "Task list was published to your team",
+        "templateText": "{User} sent a task list",
+        "type": "TaskListPublishedToYourTeamG"
+      },
+      {
+        "description": "Task list was unpublished",
+        "templateText": "{User} recalled a task list",
+        "type": "TaskListRecalledFromYourTeamG"
+      },
+      {
+        "description": "Task assigned to you is not urgent anymore",
+        "templateText": "{User} made your task not urgent",
+        "type": "YourTaskWasMarkedNotUrgentG"
+      },
+      {
+        "description": "Urgent task assigned to you",
+        "templateText": "URGENT! {User} assigned you an urgent task",
+        "type": "UrgentTaskAssignedToYouG"
+      },
+      {
+        "description": "Your task is now urgent",
+        "templateText": "URGENT! {User} made your task urgent",
+        "type": "TaskAssignedToYouIsNowUrgentG"
+      },
+      {
+        "description": "Published task is now urgent",
+        "templateText": "{User} has marked a task urgent",
+        "type": "PublishedTaskIsUrgentG"
+      },
+      {
+        "description": "Task assigned to you by an App",
+        "templateText": "Your organization assigned a task to you via {App}",
+        "type": "TaskAssignedToYouByApp"
+      },
+      {
+        "description": "Your task status changed to blocked by an App",
+        "templateText": "Your organization marked your task Blocked via {App}",
+        "type": "YourTaskChangedToBlockedByApp"
+      },
+      {
+        "description": "Your task status changed to complete by an App",
+        "templateText": "Your organization marked your task Completed via {App}",
+        "type": "YourTaskChangedToCompletedByApp"
+      },
+      {
+        "description": "Your task status changed to incomplete by an App",
+        "templateText": "Your organization marked your task In progress via {App}",
+        "type": "YourTaskChangedToInProgressByApp"
+      },
+      {
+        "description": "Your task status changed to not started by an App",
+        "templateText": "Your organization marked your task Not started via {App}",
+        "type": "YourTaskChangedToNotStartedByApp"
+      },
+      {
+        "description": "Your task status changed to removed by an App",
+        "templateText": "Your organization marked your task Removed via {App}",
+        "type": "YourTaskChangedToRemovedByApp"
+      },
+      {
+        "description": "Your task status changed to not applicable by an App",
+        "templateText": "Your organization marked your task Not applicable via {App}",
+        "type": "YourTaskChangedToNAByApp"
+      },
+      {
+        "description": "Task assigned to you was reassigned by an App",
+        "templateText": "Your organization removed you from a task via {App}",
+        "type": "YourTaskWasReassignedByApp"
+      },
+      {
+        "description": "Task assigned to you is marked not urgent by an App",
+        "templateText": "Your organization made your task not urgent via {App}",
+        "type": "YourTaskWasMarkedNotUrgentByApp"
+      },
+      {
+        "description": "Urgent task assigned to you by an App",
+        "templateText": "URGENT! Your organization assigned you an urgent task via {App}",
+        "type": "UrgentTaskAssignedToYouByApp"
+      },
+      {
+        "description": "Your task is now marked urgent by an App",
+        "templateText": "URGENT! Your organization made your task urgent via {App}",
+        "type": "YourTaskWasMarkedUrgentByApp"
+      },
+      {
+        "description": "Task assigned to you was updated by an App",
+        "templateText": "Your organization made an update to your task via {App}",
+        "type": "TaskAssignedWasUpdatedByApp"
+      }
+    ]
   },
-}
+  "categories": [
+    "Microsoft",
+    "Productivity",
+    "ProjectManagement"
+  ],
+  "developerName": "Microsoft Corporation",
+  "developerUrl": "https://aka.ms/TasksApp",
+  "disabledScopes": [
+    "PrivateChannel"
+  ],
+  "galleryTabs": [
+    {
+      "canUpdateConfiguration": true,
+      "configurationUrl": "https://tasks.teams.microsoft.com/teamsui/{tid}/Home/PlannerFrame?page=12&auth_pvr=OrgId&auth_upn={userPrincipalName}&tid={tid}&userObjectId={userObjectId}&tasksAppFlavor=planner&subEntityId={subEntityId}&groupId={groupId}&entityId={entityId}&channelId={channelId}&sessionId={sessionId}&theme={theme}&mkt={locale}&locale={locale}&ringId={ringId}&PlannerRouteHint={tid}",
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "00000000-0000-0000-0000-000000000000",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "message"
+          ],
+          "description": "Create a task from a chat or a channel post.",
+          "fetchTask": false,
+          "id": "createTaskFromMessage",
+          "initialRun": false,
+          "taskInfo": {
+            "height": "452",
+            "title": "Create task",
+            "url": "https://tasks.teams.microsoft.com/teamsui/messageTasks?parentMessageId={parentMessageId}&groupId={groupId}&teamId={teamId}&channelId={channelId}&entityId=messagetasks&tid={tid}&userObjectId={userObjectId}&tasksAppFlavor=planner&sessionId={sessionId}&theme={theme}&locale={locale}&ringId={ringId}",
+            "width": "800"
+          },
+          "title": "Create task",
+          "type": "action"
+        }
+      ],
+      "fetchCommands": false,
+      "messageHandlers": [],
+      "scopes": [
+        "personal",
+        "team"
+      ]
+    }
+  ],
+  "isAppIOSAcquirable": true,
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": true,
+  "isFullTrust": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": true,
+  "isTenantConfigurable": true,
+  "languageTag": "en-us",
+  "largeImageUrl": "https://statics.teams.cdn.office.net/app-assets/preapproved_global/com.microsoft.teamspace.tab.planner/com.microsoft.teamspace.tab.planner_largeImage.png?v=1.3.1",
+  "longDescription": "The new Microsoft Planner brings together the best of To Do, Planner, and Project for the web.\n\n**Simple**\nEasily manage all your tasks, to-dos, lists, plans, and projects across Microsoft 365 apps.\n\n**Flexible**\nFrom individual task management to large team initiatives, Planner scales to meet your needs and offers various templates, views, and approaches to personalize your plan.\n\nNote: this app was formerly known as \"Tasks by Planner and To Do\".",
+  "mobileModules": [
+    {
+      "icons": {
+        "default": "assets://app_icons/teams-tasks-mobilern/icn_default.svg",
+        "selected": "assets://app_icons/teams-tasks-mobilern/icn_selected.svg"
+      },
+      "id": "com.microsoft.teamspace.tab.planner",
+      "rnPackageUrl": "codepush://teams-tasks-mobilern/?deploymentKey=q6AFLM6i5GbUOJOjIUHgD0hHyCn_NfZmrtmwV",
+      "targetSdkVersion": "0.7.0",
+      "title": "Tasks",
+      "type": "reactNative"
+    }
+  ],
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://privacy.microsoft.com/privacystatement",
+  "publisherType": "FirstParty",
+  "restrictedTenantTypes": [
+    "Freemium"
+  ],
+  "screenshotUrls": [
+    "https://statics.retailservices.teams.cdn.office.net/ui/static/releases/uno/all/assets/PlannerAppStore_00.15d22075c7bd63dbe27b.png",
+    "https://statics.retailservices.teams.cdn.office.net/ui/static/releases/uno/all/assets/PlannerAppStore_01.30a9b783d5cce1ade071.png",
+    "https://statics.retailservices.teams.cdn.office.net/ui/static/releases/uno/all/assets/PlannerAppStore_03.7cdf1e60f59d5a255bff.png"
+  ],
+  "shortDescription": "All your tasks and projects in one simple, familiar experience",
+  "showLoadingIndicator": true,
+  "smallImageUrl": "https://statics.teams.cdn.office.net/app-assets/preapproved_global/com.microsoft.teamspace.tab.planner/com.microsoft.teamspace.tab.planner_smallImage.png?v=1.3.1",
+  "staticTabs": [
+    {
+      "contentUrl": "https://tasks.teams.microsoft.com/teamsui/{tid}/Home/PlannerFrame?page=8&isFullScreen=true&auth_pvr=OrgId&auth_upn={userPrincipalName}&tid={tid}&userObjectId={userObjectId}&tasksAppFlavor=planner&subEntityId={subEntityId}&entityId={entityId}&sessionId={sessionId}&theme={theme}&mkt={locale}&locale={locale}&ringId={ringId}&PlannerRouteHint={tid}",
+      "entityId": "mytasks",
+      "name": "My Tasks",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://tasks.office.com/"
+    },
+    {
+      "contentUrl": "https://support.office.com/{locale}/client/62798a9f-e8f7-4722-a700-27dd28a06ee0",
+      "entityId": "help",
+      "name": "Help",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://support.office.com/client/62798a9f-e8f7-4722-a700-27dd28a06ee0"
+    }
+  ],
+  "supportedTenantRegions": [
+    "GCC",
+    "GCCH",
+    "DOD"
+  ],
+  "termsOfUseUrl": "https://www.microsoft.com/servicesagreement",
+  "validDomains": [
+    "*.office.com",
+    "*.office-int.com",
+    "*.officeppe.com",
+    "*.tasks.teams.microsoft.com",
+    "tasks.teams.microsoft.com"
+  ],
+  "videoUrl": "https://www.youtube.com/watch?v=8apDnToXVTU&list=PLXPr7gfUMmKwwYisWgc8hHuJ14Flf80yu&index=2&ab_channel=Microsoft365",
+  "webApplicationInfo": {
+    "id": "75efb5bc-18a1-4e7b-8a66-2ad2503d79c6",
+    "resource": "https://tasks.office.com"
+  }
+  },
             {
                 "manifestVersion": "1.16",
                 "version": "1.0.3",
