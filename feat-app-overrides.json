@@ -1495,26 +1495,20 @@
                 "shortDescription": "Ask your team questions with Polly and get instant answers in Microsoft Teams",
                 "smallImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/1542629c-01b3-4a6d-8f76-1938b779e48d_smallImage.png?v=2.0.6",
                 "staticTabs": [
+                  {
+                    "contentUrl": "https://teams.polly.ai/msteams/content/personal/dashboard?theme={theme}",
+                    "entityId": "3972bda4-858c-43de-b4a4-10d84087c723",
+                    "name": "Dashboard",
+                    "scopes": [
+                      "personal"
+                         ]
+                    },
                     {
-                        "contentUrl": "https://teams-test-tab.azurewebsites.net",
-                        "context": [
-                            "personalTab",
-                            "privateChatTab",
-                            "channelTab",
-                            "meetingChatTab",
-                            "meetingDetailsTab",
-                            "meetingSidePanel",
-                            "meetingStage"
-                        ],
-                        "entityId": "test-tab",
-                        "name": "OriginalPolly",
-                        "scopes": [
-                            "personal",
-                            "team",
-                            "groupChat"
-                        ],
-                        "websiteUrl": "https://teams-test-tab.azurewebsites.net"
-                    }
+                    "entityId": "conversations",
+                "scopes": [
+                  "personal"
+                    ]
+                  }
                 ],
                 "termsOfUseUrl": "https://www.polly.ai/tos",
                 "validDomains": [
