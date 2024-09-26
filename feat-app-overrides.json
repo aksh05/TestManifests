@@ -1340,118 +1340,142 @@
                 }
             },
             {
-                "manifestVersion": "1.9",
-                "id": "1542629c-01b3-4a6d-8f76-1938b779e48d",
-                "version": "2.0.7",
-                "name": "Polly",
-                "accentColor": "#0190F7",
-                "bots": [
-                    {
-                        "commandLists": [
-                            {
-                                "commands": [
-                                    {
-                                        "description": "Start a quick poll",
-                                        "title": "Your question? Option1, Option2"
-                                    }
-                                ],
-                                "scopes": [
-                                    "team",
-                                    "personal",
-                                    "groupchat"
-                                ]
-                            }
-                        ],
-                        "id": "817c2506-de4a-4795-971e-371ea75a03ed",
-                        "isNotificationOnly": false,
-                        "scopes": [
-                            "team",
-                            "personal",
-                            "groupchat"
-                        ],
-                        "supportsFiles": true
-                    }
+                "officeAssetId": "WA104381060",
+                "screenshotUrls": [
+                    "https://res.cdn.office.net/teamsappdata/evergreen-assets/ThirdPartyApps/screenshots/1542629c-01b3-4a6d-8f76-1938b779e48d/1.png?v=2.0.6",
+                    "https://res.cdn.office.net/teamsappdata/evergreen-assets/ThirdPartyApps/screenshots/1542629c-01b3-4a6d-8f76-1938b779e48d/2.png?v=2.0.6",
+                    "https://res.cdn.office.net/teamsappdata/evergreen-assets/ThirdPartyApps/screenshots/1542629c-01b3-4a6d-8f76-1938b779e48d/3.png?v=2.0.6"
                 ],
+                "videoUrl": "https://www.youtube.com/watch?v=7PK05mlvKTg",
+                "manifestVersion": "1.18",
+                "version": "2.0.6",
                 "categories": [
                     "Communication",
                     "Productivity",
                     "ProjectManagement"
                 ],
-                "defaultGroupCapability": {
-                    "groupchat": "tab",
-                    "meetings": "tab",
-                    "team": "tab"
-                },
-                "defaultInstallScope": "team",
                 "developerName": "Polly",
                 "developerUrl": "https://www.polly.ai",
+                "privacyUrl": "https://www.polly.ai/privacy",
+                "termsOfUseUrl": "https://www.polly.ai/tos",
+                "validDomains": [
+                    "*.polly.ai"
+                ],
+                "permissions": [
+                    "Identity",
+                    "MessageTeamMembers"
+                ],
+                "bots": [
+                    {
+                        "id": "817c2506-de4a-4795-971e-371ea75a03ed",
+                        "scopes": [
+                            "Team",
+                            "Personal",
+                            "GroupChat"
+                        ],
+                        "commandLists": [
+                            {
+                                "scopes": [
+                                    "Team",
+                                    "Personal",
+                                    "GroupChat"
+                                ],
+                                "commands": [
+                                    {
+                                        "title": "Your question? Option1, Option2",
+                                        "description": "Start a quick poll"
+                                    }
+                                ]
+                            }
+                        ],
+                        "isNotificationOnly": false,
+                        "supportsFiles": true
+                    }
+                ],
                 "galleryTabs": [
                     {
+                        "context": [
+                            "ChannelTab",
+                            "PrivateChatTab",
+                            "MeetingChatTab",
+                            "MeetingDetailsTab",
+                            "MeetingSidePanel"
+                        ],
                         "canUpdateConfiguration": true,
                         "configurationUrl": "https://teams.polly.ai/msteams/content/tabconfig?theme={theme}",
-                        "context": [
-                            "channelTab",
-                            "privateChatTab",
-                            "meetingChatTab",
-                            "meetingDetailsTab",
-                            "meetingSidePanel"
-                        ],
                         "scopes": [
-                            "team",
-                            "groupchat"
+                            "Team",
+                            "GroupChat"
                         ]
                     }
                 ],
-                "industries": [
-                    "Other"
+                "staticTabs": [
+                    {
+                        "entityId": "3972bda4-858c-43de-b4a4-10d84087c723",
+                        "name": "Dashboard",
+                        "contentUrl": "https://teams.polly.ai/msteams/content/personal/dashboard?theme={theme}",
+                        "scopes": [
+                            "Personal"
+                        ]
+                    },
+                    {
+                        "entityId": "conversations",
+                        "scopes": [
+                            "Personal"
+                        ]
+                    }
                 ],
                 "inputExtensions": [
                     {
                         "botId": "817c2506-de4a-4795-971e-371ea75a03ed",
                         "canUpdateConfiguration": false,
+                        "scopes": [
+                            "Personal",
+                            "Team",
+                            "GroupChat"
+                        ],
                         "commands": [
                             {
-                                "context": [
-                                    "compose"
-                                ],
-                                "description": "Customized to your needs",
-                                "fetchTask": true,
                                 "id": "survey/authoring",
+                                "type": "Action",
+                                "context": [
+                                    "Compose"
+                                ],
+                                "fetchTask": true,
                                 "parameters": [
                                     {
-                                        "description": "",
                                         "name": "param",
-                                        "title": "param"
+                                        "title": "param",
+                                        "description": ""
                                     }
                                 ],
                                 "taskInfo": {
-                                    "height": "large",
-                                    "width": "700"
+                                    "width": "700",
+                                    "height": "large"
                                 },
                                 "title": "Create a new polly",
-                                "type": "action"
+                                "description": "Customized to your needs"
                             },
                             {
-                                "context": [
-                                    "message"
-                                ],
-                                "description": "Create a polly from this message",
-                                "fetchTask": true,
                                 "id": "messageAction",
+                                "type": "Action",
+                                "context": [
+                                    "Message"
+                                ],
+                                "fetchTask": true,
                                 "parameters": [
                                     {
-                                        "description": "",
                                         "name": "param",
-                                        "title": "param"
+                                        "title": "param",
+                                        "description": ""
                                     }
                                 ],
                                 "title": "Create a Polly",
-                                "type": "action"
+                                "description": "Create a polly from this message"
                             }
                         ],
                         "messageHandlers": [
                             {
-                                "type": "link",
                                 "value": {
                                     "domains": [
                                         "teams.polly.ai"
@@ -1459,68 +1483,87 @@
                                 }
                             }
                         ],
-                        "scopes": [
-                            "team",
-                            "personal"
-                        ]
+                        "type": "botBased"
                     }
+                ],
+                "webApplicationInfo": {
+                    "id": "228f3e22-92b5-4c6d-91e8-9dcc1757ad36",
+                    "resource": "api://teams.polly.ai/228f3e22-92b5-4c6d-91e8-9dcc1757ad36"
+                },
+                "mpnId": "6142723",
+                "activities": {
+                    "activityItems": [
+                        {
+                            "type": "systemDefault",
+                            "description": "Other activities",
+                            "templateText": "{systemDefaultText}"
+                        }
+                    ]
+                },
+                "industries": [
+                    "Other"
                 ],
                 "keywords": [
                     "survey",
                     "poll",
                     "quiz"
                 ],
-                "largeImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/1542629c-01b3-4a6d-8f76-1938b779e48d_largeImage.png?v=2.0.6",
-                "lastUpdatedAt": "2021-12-01T05:04:46.0755854Z",
-                "longDescription": "Polly is an engagement app that captures instant, contextual feedback from your team in seconds. Just about anyone can get started with Polly to quickly reach their colleagues and make data-driven decisions instantly.\r\nYou can use Polly to get meeting feedback, quiz your students, get a pulse on how your team is feeling, and so much more. Polly offers an array of advanced functionality such as templates, recurrence, scheduling, anonymity, and more all available to you in Microsoft Teams.\r\nTo get started, add Polly to a Team of your choice, and you can start creating your first polly by using the messaging extension or pinning Polly to the Team tab.\r\nFor Teams Meetings, just add Polly to the Meeting tab to start creating your polly ahead of when your meeting is scheduled, and you can send your polly on demand directly in the meeting to your attendees.\r\nAll of your results will live in your Polly tab that's pinned to the Team and you can share, delete, or close as needed. Not sure what types of questions to ask? We have 30+ templates available for you to use at any time if you need a bit of inspiration.",
-                "mpnId": "6142723",
-                "officeAssetId": "WA104381060",
-                "permissions": [
-                    "Identity",
-                    "MessageTeamMembers"
-                ],
-                "privacyUrl": "https://www.polly.ai/privacy",
-                "screenshotUrls": [
-                    "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/1542629c-01b3-4a6d-8f76-1938b779e48d/1.png?v=2.0.6",
-                    "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/1542629c-01b3-4a6d-8f76-1938b779e48d/2.png?v=2.0.6",
-                    "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/1542629c-01b3-4a6d-8f76-1938b779e48d/3.png?v=2.0.6"
-                ],
-                "securityComplianceInfo": {
-                    "status": "unattested"
+                "defaultInstallScope": "Team",
+                "defaultGroupCapability": {
+                    "team": "Tab",
+                    "groupchat": "Tab",
+                    "meetings": "Tab"
                 },
-                "shortDescription": "Ask your team questions with Polly and get instant answers in Microsoft Teams",
-                "smallImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/1542629c-01b3-4a6d-8f76-1938b779e48d_smallImage.png?v=2.0.6",
-                "staticTabs": [
-                    {
-                        "contentUrl": "https://teams-test-tab.azurewebsites.net",
-                        "context": [
-                            "personalTab",
-                            "privateChatTab",
-                            "channelTab",
-                            "meetingChatTab",
-                            "meetingDetailsTab",
-                            "meetingSidePanel",
-                            "meetingStage"
-                        ],
-                        "entityId": "test-tab",
-                        "name": "OriginalPolly",
+                "lastUpdatedAt": "2021-12-01T05:04:46.0755854+00:00",
+                "securityComplianceInfo": {
+                    "status": "M365Certified"
+                },
+                "isAppIOSAcquirable": true,
+                "publishingPolicy": {
+                    "releaseType": "Standard",
+                    "isFlaggedForViolations": false
+                },
+                "metaCapabilities": {
+                    "bots": {
                         "scopes": [
-                            "personal",
-                            "team",
-                            "groupChat"
-                        ],
-                        "websiteUrl": "https://teams-test-tab.azurewebsites.net"
+                            "Team",
+                            "Personal",
+                            "GroupChat"
+                        ]
+                    },
+                    "galleryTabs": {
+                        "scopes": [
+                            "Team",
+                            "GroupChat"
+                        ]
+                    },
+                    "staticTabs": {
+                        "scopes": [
+                            "Personal"
+                        ]
+                    },
+                    "messageExtensions": {
+                        "scopes": [
+                            "Personal",
+                            "Team",
+                            "GroupChat"
+                        ]
                     }
+                },
+                "isMetaOSApp": false,
+                "isCopilotEnabled": false,
+                "shortDescription": "Ask your team questions with Polly and get instant answers in Microsoft Teams",
+                "longDescription": "Polly is an engagement app that captures instant, contextual feedback from your team in seconds. Just about anyone can get started with Polly to quickly reach their colleagues and make data-driven decisions instantly.\r\nYou can use Polly to get meeting feedback, quiz your students, get a pulse on how your team is feeling, and so much more. Polly offers an array of advanced functionality such as templates, recurrence, scheduling, anonymity, and more all available to you in Microsoft Teams.\r\nTo get started, add Polly to a Team of your choice, and you can start creating your first polly by using the messaging extension or pinning Polly to the Team tab.\r\nFor Teams Meetings, just add Polly to the Meeting tab to start creating your polly ahead of when your meeting is scheduled, and you can send your polly on demand directly in the meeting to your attendees.\r\nAll of your results will live in your Polly tab that's pinned to the Team and you can share, delete, or close as needed. Not sure what types of questions to ask? We have 30+ templates available for you to use at any time if you need a bit of inspiration.",
+                "accentColor": "#0190F7",
+                "id": "1542629c-01b3-4a6d-8f76-1938b779e48d",
+                "name": "Polly",
+                "smallImageUrl": "https://res.cdn.office.net/teamsappdata/evergreen-assets/ThirdPartyApps/1542629c-01b3-4a6d-8f76-1938b779e48d_smallImage.png?v=2.0.6",
+                "largeImageUrl": "https://res.cdn.office.net/teamsappdata/evergreen-assets/ThirdPartyApps/1542629c-01b3-4a6d-8f76-1938b779e48d_largeImage.png?v=2.0.6",
+                "isMobileOnly": false,
+                "supportedChannelTypes": [
+                    "SharedChannels",
+                    "PrivateChannels"
                 ],
-                "termsOfUseUrl": "https://www.polly.ai/tos",
-                "validDomains": [
-                    "*.polly.ai"
-                ],
-                "videoUrl": "https://www.youtube.com/watch?v=7PK05mlvKTg",
-                "webApplicationInfo": {
-                    "id": "228f3e22-92b5-4c6d-91e8-9dcc1757ad36",
-                    "resource": "api://teams.polly.ai/228f3e22-92b5-4c6d-91e8-9dcc1757ad36"
-                }
             },
             {
                 "manifestVersion": "1.16",
