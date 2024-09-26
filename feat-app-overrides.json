@@ -2663,6 +2663,138 @@
           "resource": "https://substrate.office.com/weve"
         }
      },
+    {
+        "manifestVersion": "1.17",
+        "id": "0e3bedea-4720-48b5-9e13-5a1ce1387d45",
+        "version": "1.11.0",
+        "name": "Polls",
+        "accentColor": "#6264A7",
+        "amsSellerAccountId": 10100100,
+                "supportedChannelTypes": [
+                    "SharedChannels",
+                    "PrivateChannels"
+                ],
+        "authorization": {
+          "permissions": {
+            "resourceSpecific": []
+          }
+        },
+        "bots": [
+          {
+            "id": "fd931076-bbfb-4a38-a85c-1f0fb5b61bee",
+            "isNotificationOnly": true,
+            "scopes": [
+              "groupChat",
+              "team"
+            ]
+          }
+        ],
+        "categories": [
+          "Communication",
+          "Productivity",
+          "Utilities"
+        ],
+        "developerName": "Microsoft Corporation",
+        "developerUrl": "https://support.microsoft.com/forms",
+        "galleryTabs": [
+          {
+            "canUpdateConfiguration": false,
+            "configurationUrl": "https://forms.office.com/pages/teamsconfigpage.aspx?lang={locale}&tid={tid}&groupId={groupId}&upn={upn}&teamsTheme={theme}&appid=0e3bedea-4720-48b5-9e13-5a1ce1387d45",
+            "context": [
+              "meetingChatTab",
+              "meetingDetailsTab",
+              "meetingSidePanel"
+            ],
+            "scopes": [
+              "groupChat",
+              "team"
+            ]
+          }
+        ],
+        "industries": [
+          "Other"
+        ],
+        "inputExtensions": [
+          {
+            "botId": "fd931076-bbfb-4a38-a85c-1f0fb5b61bee",
+            "canUpdateConfiguration": false,
+            "commands": [
+              {
+                "context": [
+                  "compose"
+                ],
+                "description": "Collect real-time data with Forms poll",
+                "fetchTask": true,
+                "id": "collectFormData",
+                "initialRun": false,
+                "title": "Create a new poll",
+                "type": "action"
+              }
+            ],
+            "scopes": [
+              "team",
+              "personal"
+            ]
+          }
+        ],
+        "isAppIOSAcquirable": true,
+        "isBlockable": true,
+        "isMetaOSApp": false,
+        "isTeamsOwned": true,
+        "isTenantConfigurable": true,
+        "keywords": [
+          "Forms"
+        ],
+        "languageTag": "en-us",
+        "largeImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/0e3bedea-4720-48b5-9e13-5a1ce1387d45_largeImage.png?v=1.11.0",
+        "lastUpdatedAt": "2024-06-21T12:44:58.6398169Z",
+        "longDescription": "Easily create choice polls, quizzes and word cloud polls before or during your meeting. Collect responses in real-time.\n\n[Get Started](https://go.microsoft.com/fwlink/?linkid=2270227) | [Get Help](https://support.microsoft.com/forms)",
+        "meetingExtensionDefinition": {
+          "isAnonymousAccessAllowed": false,
+          "scenes": []
+        },
+        "officeAssetId": "WA200004277",
+        "permissions": [],
+        "privacyUrl": "https://www.microsoft.com/privacy",
+        "publisherDocsUrl": "https://go.microsoft.com/fwlink/?linkid=2271441",
+        "publisherType": "SecondParty",
+        "screenshotUrls": [
+          "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/0e3bedea-4720-48b5-9e13-5a1ce1387d45/1.png?v=1.11.0",
+          "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/0e3bedea-4720-48b5-9e13-5a1ce1387d45/2.png?v=1.11.0",
+          "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/0e3bedea-4720-48b5-9e13-5a1ce1387d45/3.png?v=1.11.0"
+        ],
+        "shortDescription": "Easily create polls with your team in Microsoft Teams",
+        "smallImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/0e3bedea-4720-48b5-9e13-5a1ce1387d45_smallImage.png?v=1.11.0",
+        "staticTabs": [
+          {
+            "contentUrl": "https://forms.office.com/Pages/TeamsMeetingPollPage.aspx?&lang={locale}&tid={tid}&teamsTheme={theme}&upn={upn}&appid=0e3bedea-4720-48b5-9e13-5a1ce1387d45",
+            "context": [
+              "meetingChatTab",
+              "meetingDetailsTab",
+              "meetingSidePanel"
+            ],
+            "entityId": "TeamsMeetingPollPage",
+            "name": "Polls",
+            "scopes": [
+              "groupChat",
+              "team"
+            ],
+            "websiteUrl": "https://forms.office.com"
+          }
+        ],
+        "supportedTenantRegions": [
+          "GCC"
+        ],
+        "termsOfUseUrl": "https://go.microsoft.com/fwlink/?linkid=2174878",
+        "validDomains": [
+          "forms.office.com",
+          "forms.cloud.microsoft"
+        ],
+        "webApplicationInfo": {
+          "id": "c9a559d2-7aab-4f13-a6ed-e7e9c52aec87",
+          "resource": "https://forms.office.com"
+        }
+                  },
             {
                 "manifestVersion": "1.16",
                 "version": "1.0.3",
