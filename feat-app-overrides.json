@@ -1523,6 +1523,178 @@
           "resource": "api://teams.polly.ai/228f3e22-92b5-4c6d-91e8-9dcc1757ad36"
         }
             },
+{
+  "manifestVersion": "1.16",
+  "id": "com.microsoft.teamspace.tab.youtube",
+  "version": "1.0.9",
+  "name": "YouTube_test",
+  "accentColor": "#ff0000",
+  "amsSellerAccountId": 10100100,
+  "authorization": {
+    "permissions": {
+      "resourceSpecific": [
+        {
+          "name": "MeetingStage.Write.Chat",
+          "type": "Delegated"
+        },
+        {
+          "name": "OnlineMeetingIncomingAudio.Detect.Chat",
+          "type": "Delegated"
+        },
+        {
+          "name": "ChannelMeetingStage.Write.Group",
+          "type": "Delegated"
+        },
+        {
+          "name": "LiveShareSession.ReadWrite.Group",
+          "type": "Delegated"
+        },
+        {
+          "name": "LiveShareSession.ReadWrite.Chat",
+          "type": "Delegated"
+        },
+        {
+          "name": "OnlineMeeting.ReadBasic.Chat",
+          "type": "Delegated"
+        }
+      ]
+    }
+  },
+  "categories": [
+    "Social",
+    "TrainingAndTutorial"
+  ],
+  "developerName": "Microsoft Corporation",
+  "developerUrl": "https://www.microsoft.com",
+  "galleryTabs": [
+    {
+      "canUpdateConfiguration": false,
+      "configurationUrl": "https://tabs.teams.microsoft.com/youtube",
+      "context": [
+        "channelTab",
+        "meetingChatTab",
+        "meetingDetailsTab",
+        "meetingSidePanel",
+        "meetingStage",
+        "privateChatTab"
+      ],
+      "scopes": [
+        "groupchat",
+        "team"
+      ]
+    }
+  ],
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "05614650-0d94-4601-bd2f-c200a0a7c57c",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "commandBox",
+            "compose"
+          ],
+          "description": "Browse YouTube for videos",
+          "fetchTask": false,
+          "id": "search.Youtube",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "Enter a search term",
+              "inputType": "text",
+              "name": "keyword",
+              "title": "Search term"
+            }
+          ],
+          "title": "Browse YouTube",
+          "type": "query"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "type": "link",
+          "value": {
+            "domains": [
+              "*.youtube.com",
+              "youtube.com",
+              "*.youtu.be",
+              "youtu.be"
+            ],
+            "supportsAnonymousAccess": true
+          }
+        }
+      ],
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isAppIOSAcquirable": true,
+  "isBlockable": true,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isTeamsOwned": false,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "live share",
+    "videos",
+    "meetings"
+  ],
+  "languageTag": "en-us",
+  "largeImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/com.microsoft.teamspace.tab.youtube_largeImage.png?v=1.0.9",
+  "lastUpdatedAt": "2023-04-18T21:57:30.4470339Z",
+  "longDescription": "Share a YouTube video with others. Simply search for the video you want to share or paste its URL.\n\nYouTube now supports Microsoft Live Share! To watch videos with your colleague in meetings and calls, add the YouTube app to your meeting or click the \"Watch together\" button from videos you share in chat.\n\nThis application is maintained by Microsoft for use in Microsoft 365 services and was developed with YouTube.\n\nHow to report inappropriate or offensive content to YouTube: [https://support.google.com/youtube/answer/2802027](https://support.google.com/youtube/answer/2802027)",
+  "meetingExtensionDefinition": {
+    "isAnonymousAccessAllowed": true,
+    "scenes": []
+  },
+  "officeAssetId": "WA200005408",
+  "permissions": [],
+  "privacyUrl": "https://tabs.teams.microsoft.com/pre/youtubeLegal",
+  "screenshotUrls": [
+    "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/com.microsoft.teamspace.tab.youtube/1.png?v=1.0.9",
+    "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/com.microsoft.teamspace.tab.youtube/2.png?v=1.0.9",
+    "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/com.microsoft.teamspace.tab.youtube/3.png?v=1.0.9",
+    "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/com.microsoft.teamspace.tab.youtube/4.png?v=1.0.9"
+  ],
+  "shortDescription": "Search for videos on YouTube & watch together in meetings",
+  "showLoadingIndicator": true,
+  "smallImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/com.microsoft.teamspace.tab.youtube_smallImage.png?v=1.0.9",
+  "staticTabs": [
+    {
+      "contentUrl": "https://tabs.teams.microsoft.com/prod/youtube/personal",
+      "context": [
+        "personalTab"
+      ],
+      "entityId": "5c74502b-ff48-455e-a57b-20c9d458b320",
+      "name": "Home",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://www.youtube.com"
+    },
+    {
+      "entityId": "about",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "termsOfUseUrl": "https://tabs.teams.microsoft.com/pre/youtubeLegal",
+  "validDomains": [
+    "tabs.teams.microsoft.com",
+    "*.youtube.com"
+  ],
+  "webApplicationInfo": {
+    "id": "ab3be6b7-f5df-413d-ac2d-abf1e3fd9c0b",
+    "resource": "https://tabs.teams.microsoft.com"
+  },
+}
             {
                 "manifestVersion": "1.16",
                 "version": "1.0.3",
