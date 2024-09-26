@@ -1989,6 +1989,680 @@
     "resource": "https://tasks.office.com"
   }
   },
+
+{
+  "manifestVersion": "1.16",
+  "id": "c3a1996d-db0f-4857-a6ea-7aabf0266b00",
+  "version": "2.1.1",
+  "name": "Workflows",
+  "accentColor": "#6264A7",
+                "supportedChannelTypes": [
+                    "SharedChannels",
+                    "PrivateChannels"
+                ],
+  "activities": {
+    "activityTypes": [
+      {
+        "description": "Flow message notifications",
+        "templateText": "{actor} message notification",
+        "type": "messageNotify"
+      },
+      {
+        "description": "Send a custom feed notification",
+        "templateText": "{customMessage}",
+        "type": "customNotification"
+      }
+    ]
+  },
+  "appCatalogExtension": {
+    "authModel": "powerApps",
+    "searchUrl": "https://api.flow.microsoft.com/providers/Microsoft.ProcessSimple/galleries/public/teamsworkflowtemplates?$filter=properties/categoryNames/any(x:x eq 'microsoftteams_store') and properties/categoryNames/all(x:x ne 'reported')&useNewConfigUrl=true&supportBigTiles=true",
+    "type": "workflow",
+    "webApplicationInfo": {
+      "id": "7df0a125-d3be-4c96-aa54-591f83ff541c",
+      "resource": "https://service.flow.microsoft.com/"
+    }
+  },
+  "authorization": {
+    "permissions": {
+      "orgWide": [],
+      "resourceSpecific": []
+    }
+  },
+  "bots": [
+    {
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Find out what I can do",
+              "title": "Learn more"
+            },
+            {
+              "description": "See which flows I can run for you in the default environment",
+              "title": "List flows"
+            },
+            {
+              "description": "Choose the flow you'd like me to run",
+              "title": "Run flow"
+            },
+            {
+              "description": "Choose the flow you'd like me to describe",
+              "title": "Describe flow"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "Find out what I can do",
+              "title": "Learn more"
+            },
+            {
+              "description": "See which flows I can run for you in the default environment",
+              "title": "List flows"
+            },
+            {
+              "description": "Choose the flow you'd like me to run",
+              "title": "Run flow"
+            },
+            {
+              "description": "Choose the flow you'd like me to describe",
+              "title": "Describe flow"
+            }
+          ],
+          "scopes": [
+            "groupChat"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "description": "Find out what I can do",
+              "title": "Learn more"
+            },
+            {
+              "description": "See which flows I can run for you in the default environment",
+              "title": "List flows"
+            },
+            {
+              "description": "Choose the flow you'd like me to run",
+              "title": "Run flow"
+            },
+            {
+              "description": "Choose the flow you'd like me to describe",
+              "title": "Describe flow"
+            }
+          ],
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "id": "358f0194-6b0e-4dd3-af35-c24fe8a9ec87",
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal",
+        "groupchat",
+        "team"
+      ],
+      "supportsCalling": false,
+      "supportsFiles": false,
+      "supportsVideo": false
+    }
+  ],
+  "categories": [
+    "WorkflowAndBusinessManagement",
+    "Productivity",
+    "DeveloperTools",
+    "FilesAndDocuments",
+    "Utilities",
+    "Microsoft"
+  ],
+  "developerName": "Microsoft Corporation",
+  "developerUrl": "https://flow.microsoft.com",
+  "devicePermissions": [
+    "OpenExternal"
+  ],
+  "galleryTabs": [
+    {
+      "canUpdateConfiguration": true,
+      "configurationUrl": "https://flow.microsoft.com/widgethosts/teams/?pathAlias=teamsConfiguration&locale={locale}",
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "358f0194-6b0e-4dd3-af35-c24fe8a9ec87",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Create new action",
+          "fetchTask": true,
+          "id": "createNewAction",
+          "initialRun": false,
+          "title": "Create new action",
+          "type": "action"
+        },
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Search command for Workflows",
+          "fetchTask": false,
+          "id": "searchQuery",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Search",
+              "inputType": "text",
+              "name": "searchQuery",
+              "title": "Search Query",
+              "value": ""
+            }
+          ],
+          "title": "Search",
+          "type": "query"
+        }
+      ],
+      "fetchCommands": false,
+      "messageHandlers": [],
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isAppIOSAcquirable": true,
+  "isBlockable": true,
+  "isCoreApp": false,
+  "isFullScreen": false,
+  "isFullTrust": true,
+  "isPinnable": true,
+  "isPreinstallable": true,
+  "isTeamsOwned": true,
+  "isTenantConfigurable": true,
+  "keywords": [
+    "Power Automate"
+  ],
+  "languageTag": "en-us",
+  "largeImageUrl": "https://statics.teams.cdn.office.net/app-assets/preapproved_global/c3a1996d-db0f-4857-a6ea-7aabf0266b00/c3a1996d-db0f-4857-a6ea-7aabf0266b00_largeImage.png?v=2.1.1",
+  "longDescription": "Automate time-consuming and repetitive tasks by integrating your favorite apps and services with Microsoft Power Automate.",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://go.microsoft.com/fwlink/?LinkId=521839",
+  "publisherType": "FirstParty",
+  "restrictedTenantTypes": [
+    "Freemium"
+  ],
+  "screenshotUrls": [
+    "https://statics.teams.cdn.office.net/evergreen-assets/apps/screenshots/c3a1996d-db0f-4857-a6ea-7aabf0266b00/3.png",
+    "https://statics.teams.cdn.office.net/evergreen-assets/apps/screenshots/c3a1996d-db0f-4857-a6ea-7aabf0266b00/4.png",
+    "https://statics.teams.cdn.office.net/evergreen-assets/apps/screenshots/c3a1996d-db0f-4857-a6ea-7aabf0266b00/5.png"
+  ],
+  "shortDescription": "Be more productive with Microsoft Power Automate",
+  "showLoadingIndicator": false,
+  "smallImageUrl": "https://statics.teams.cdn.office.net/app-assets/preapproved_global/c3a1996d-db0f-4857-a6ea-7aabf0266b00/c3a1996d-db0f-4857-a6ea-7aabf0266b00_smallImage.png?v=2.1.1",
+  "staticTabs": [
+    {
+      "contentUrl": "https://flow.microsoft.com/widgethosts/teams/?locale={locale}",
+      "entityId": "home",
+      "name": "Home",
+      "order": 1,
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://flow.microsoft.com"
+    },
+    {
+      "contentUrl": "https://flow.microsoft.com/widgethosts/teams/?locale={locale}",
+      "entityId": "create",
+      "name": "Create",
+      "order": 2,
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://flow.microsoft.com"
+    }
+  ],
+  "termsOfUseUrl": "https://support.microsoft.com/office/microsoft-teams-application-end-user-notice-bc6027fe-68c3-4758-a70d-cfe97c43b4e2",
+  "validDomains": [
+    "flow.microsoft.com",
+    "preview.flow.microsoft.com",
+    "*.azure-apim.net",
+    "*.consent.azure-apim.net",
+    "make.powerautomate.com",
+    "make.preview.powerautomate.com",
+    "make.preprod.powerautomate.com",
+    "make.gov.powerautomate.us",
+    "make.high.powerautomate.us",
+    "make.powerautomate.appsplatform.us"
+  ],
+  "webApplicationInfo": {
+    "id": "7df0a125-d3be-4c96-aa54-591f83ff541c",
+    "resource": "https://service.flow.microsoft.com/"
+  }
+},
+{
+  "manifestVersion": "1.17",
+  "id": "aa183fd9-7104-46c4-af9f-9ee9b81d717e",
+  "version": "2024.09.11",
+  "name": "Jira Cloud Test",
+  "accentColor": "#0052cc",
+  "amsSellerAccountId": 61367320,
+                "supportedChannelTypes": [
+                    "SharedChannels",
+                    "PrivateChannels"
+                ],
+  "bots": [
+    {
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "View list of bot commands",
+              "title": "help"
+            },
+            {
+              "description": "Set up channel notifications",
+              "title": "notifications"
+            }
+          ],
+          "scopes": [
+            "team",
+            "groupChat"
+          ]
+        }
+      ],
+      "id": "512b84d2-5840-45d6-8d01-5f073836d039",
+      "isNotificationOnly": false,
+      "scopes": [
+        "team",
+        "personal",
+        "groupChat"
+      ]
+    }
+  ],
+  "categories": [
+    "ITAdmin",
+    "ProjectManagement",
+    "WorkflowAndBusinessManagement"
+  ],
+  "connectors": [
+    {
+      "connectorId": "aa183fd9-7104-46c4-af9f-9ee9b81d717e",
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "defaultGroupCapability": {
+    "team": "tab"
+  },
+  "defaultInstallScope": "team",
+  "developerName": "Atlassian.com",
+  "developerUrl": "https://www.atlassian.com/software/jira",
+  "galleryTabs": [
+    {
+      "canUpdateConfiguration": true,
+      "configurationUrl": "https://msteams-jira.services.atlassian.com/app/configureTab",
+      "context": [
+        "meetingChatTab",
+        "meetingDetailsTab",
+        "meetingSidePanel",
+        "channelTab",
+        "privateChatTab"
+      ],
+      "scopes": [
+        "team",
+        "groupChat"
+      ]
+    }
+  ],
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "512b84d2-5840-45d6-8d01-5f073836d039",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "description": "Search Jira for tickets, issues, epics, stories, tasks, sub tasks, bugs",
+          "id": "jiraSearch",
+          "initialRun": true,
+          "parameters": [
+            {
+              "description": "Issue key or Keyword",
+              "name": "searchKeyword",
+              "title": "Keywords"
+            },
+            {
+              "description": "A precise JQL query generated from the utterance. This is a mandatory parameter. Use JQL instructions for generation",
+              "name": "jql",
+              "title": "JQL"
+            },
+            {
+              "description": "Type can be one these: 'Bug','Task','Epic', 'Story'. StatusCategory must be one of these: 'To Do','In Progress','Done'",
+              "name": "jqlIns1",
+              "title": "JQL Instructions Part 1",
+              "value": "Allowed priority values are 'Lowest','Low','Medium','High','Highest'. Multiple Priority values can be selected for a given query. Ex. Priority in ('High','Highest')"
+            },
+            {
+              "description": "Assignee value must be in single quotes. Eg.Assignee='john@xyz.com'. If self assigned, always use Assignee=currentUser()",
+              "name": "jqlIns2",
+              "title": "JQL Instructions Part 2"
+            },
+            {
+              "description": "Project,Summary,Text must be in quotes. Eg. Text~'abc' AND Project='xyz'. For linked items use:issue in linkedIssues()",
+              "name": "jqlIns3",
+              "title": "JQL Instructions Part 3"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Find all Jira tickets assigned to me"
+            },
+            {
+              "text": "What are my pending Jira work items this week"
+            },
+            {
+              "text": "Show me all open bugs to triage in Jira"
+            }
+          ],
+          "title": "Search Jira"
+        },
+        {
+          "context": [
+            "compose",
+            "commandBox",
+            "message"
+          ],
+          "description": "Create new Jira issue",
+          "fetchTask": true,
+          "id": "createCommand",
+          "parameters": [
+            {
+              "description": "A project name of the issue to be created",
+              "inputType": "text",
+              "name": "project",
+              "title": "Project"
+            },
+            {
+              "description": "Summary of the issue to be created",
+              "inputType": "text",
+              "name": "summary",
+              "title": "Summary"
+            },
+            {
+              "description": "Title of the issue to be created",
+              "inputType": "text",
+              "name": "description",
+              "title": "Description"
+            },
+            {
+              "description": "Priority of the item. This can be highest, high, medium, low or lowest.",
+              "inputType": "text",
+              "name": "priority",
+              "title": "Priority"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Create a Jira ticket for <summary>"
+            },
+            {
+              "text": "Create a Jira ticket for <summary> and <description>"
+            },
+            {
+              "text": "Create a <project> issue with <priority> for <summary>"
+            },
+            {
+              "text": "Create a Jira ticket in <project> with <description> and mark the priority as <priority>"
+            },
+            {
+              "text": "Add a Jira ticket in <project> and <summary>"
+            }
+          ],
+          "title": "Create issue in Jira",
+          "type": "action"
+        },
+        {
+          "context": [
+            "compose",
+            "commandBox",
+            "message"
+          ],
+          "description": "Add comment to issue in Jira",
+          "fetchTask": true,
+          "id": "commentCommand",
+          "parameters": [
+            {
+              "description": "Message of the comment to be added",
+              "inputType": "text",
+              "name": "message",
+              "title": "Message"
+            },
+            {
+              "description": "An issue link for the comment to be added",
+              "inputType": "text",
+              "name": "issueUrl",
+              "title": "IssueUrl"
+            }
+          ],
+          "samplePrompts": [
+            {
+              "text": "Add a <message> to a Jira ticket <issueUrl>"
+            },
+            {
+              "text": "Add a <message> to a Jira ticket"
+            },
+            {
+              "text": "Comment <message> a Jira ticket <issueUrl>"
+            }
+          ],
+          "title": "Comment in Jira",
+          "type": "action"
+        },
+        {
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "description": "Configure your Jira for Teams settings",
+          "fetchTask": true,
+          "id": "configureCommand",
+          "title": "Configure",
+          "type": "action"
+        },
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Submit feedback about the application",
+          "fetchTask": true,
+          "id": "feedbackCommand",
+          "title": "Submit feedback",
+          "type": "action"
+        },
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Request support for an issue",
+          "fetchTask": true,
+          "id": "supportCommand",
+          "title": "Request support",
+          "type": "action"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "type": "link",
+          "value": {
+            "domains": [
+              "*.jira.com/jira",
+              "*.atlassian.net/jira",
+              "*.jira.com/browse",
+              "*.atlassian.net/browse"
+            ],
+            "supportsAnonymousAccess": true
+          }
+        }
+      ],
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isAppIOSAcquirable": true,
+  "isMetaOSApp": true,
+  "keywords": [
+    "Atlassian",
+    "Jira",
+    "Issue tracking"
+  ],
+  "largeImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/aa183fd9-7104-46c4-af9f-9ee9b81d717e_largeImage.png?v=2024.09.11",
+  "lastUpdatedAt": "2024-09-14T00:29:22.5428986Z",
+  "longDescription": "The new Jira Software for Teams app anchors real-time communication to a single, shared view of the work ahead. With the power of two tools in one view, conversations have instant clarity and context, creating better alignment and shorter delivery time.\n\n**Adapt to change in real time** \n\n - In chat: Convert a Teams chat message to a new Jira issue or add a comment to an existing Jira issue in just a few clicks. \r - In Meetings: Visualize your Jira tickets in a Teams meeting in the side panel and sort by “worked on”, “viewed”, or “assigned.” \r - Prioritize and update as a group with the ability to collectively create, edit, or view tickets with meeting attendees.  \r - View your tickets directly from Teams personal tab, Outlook or Microsoft 365. \r - Retrieve and view Jira issues using Microsoft Copilot for Microsoft 365. Simply start by saying, 'Fetch issues assigned to me'. \r\n\n**The notifications you want, where you work**\n\n- Receive customizable Jira notifications in Teams with personal notifications.\r- Choose when you want to be notified depending on tickets you report, are assigned to, are mentioned on, or are watching.\r\n\n**Collaborate with one source of truth**\n\n- Easily create a central view of Jira issues in Teams by adding a tab to a team or channel and selecting a Jira filter.\r- In the tab, you can view and edit existing issues and create new issues.\r\n\n**Bring context to the conversation for instant clarity**\n\n- Search Jira or view recent Jira issues directly from a Teams chat or a new Outlook mail, so you can stay focused on the context at-hand.\r- Include multiple Jira tickets in a message, which will expand into digestible link cards.\r- Improved link cards show ticket title, project, status, and assignee.\r\n\nThe Jira Cloud for Microsoft Teams app is built for Jira Software, but also works with Jira Service Management and Jira Work Management.\n\nNew to Jira? [Sign up for free](https://www.atlassian.com/software/jira?utm_source=partner-marketplace&utm_medium=comarketing&utm_campaign=P:marketplace*O:ecosystem*F:consideration*C:ptour*H:fy22q2*I:msteams-jira-launch*)\n\n**Additional resources**\n\n[See all Atlassian + Microsoft Teams integrations](https://www.atlassian.com/software/marketplace/microsoft?utm_source=product-release&utm_medium=mpac-listing&utm_campaign=P:marketplace*O:ecosystem*F:consideration*C:demo*W:jira-ms-bom*H:fy22q2*I:msteams-jira-launch*)\n\n[Jira Cloud for Microsoft Teams App Demo](https://www.youtube.com/watch?v=YM7eqE89MnY)",
+  "mpnId": "4620625",
+  "officeAssetId": "WA200002140",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.atlassian.com/legal/privacy-policy",
+  "publisherDocsUrl": "https://support.atlassian.com/jira-software-cloud/docs/integrate-jira-cloud-with-microsoft-teams/",
+  "screenshotUrls": [
+    "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/aa183fd9-7104-46c4-af9f-9ee9b81d717e/1.png?v=2024.09.11",
+    "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/aa183fd9-7104-46c4-af9f-9ee9b81d717e/2.png?v=2024.09.11",
+    "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/aa183fd9-7104-46c4-af9f-9ee9b81d717e/3.png?v=2024.09.11",
+    "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/aa183fd9-7104-46c4-af9f-9ee9b81d717e/4.png?v=2024.09.11",
+    "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/aa183fd9-7104-46c4-af9f-9ee9b81d717e/5.png?v=2024.09.11"
+  ],
+  "securityComplianceInfo": {
+    "mcasId": "20596",
+    "status": "attested"
+  },
+  "shortDescription": "Empower your team to track, update, and manage projects from Microsoft Teams.",
+  "smallImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/aa183fd9-7104-46c4-af9f-9ee9b81d717e_smallImage.png?v=2024.09.11",
+  "staticTabs": [
+    {
+      "contentUrl": "https://msteams-jira.services.atlassian.com/app/staticTab?tabName=issuesTab",
+      "context": [
+        "personalTab"
+      ],
+      "entityId": "IssuesTab",
+      "name": "Issues",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "termsOfUseUrl": "https://www.atlassian.com/licensing/marketplace/termsofuse",
+  "validDomains": [
+    "*.jira.com",
+    "*.atlassian.net",
+    "*.atlassian.com",
+    "*.services.atlassian.com"
+  ],
+  "webApplicationInfo": {
+    "id": "512b84d2-5840-45d6-8d01-5f073836d039",
+    "resource": "api://msteams-jira.services.atlassian.com/512b84d2-5840-45d6-8d01-5f073836d039"
+  }
+},
+     {
+        "manifestVersion": "1.12",
+        "id": "d832a33f-28c2-4969-8ad0-4fee681dc5b4",
+        "version": "1.2.6",
+        "name": "Praise_test",
+        "accentColor": "#6264a7",
+        "categories": [
+          "Other"
+        ],
+                "supportedChannelTypes": [
+                    "SharedChannels",
+                    "PrivateChannels"
+                ],
+        "developerName": "Microsoft Corporation",
+        "developerUrl": "https://www.microsoft.com",
+        "industries": [
+          "Other"
+        ],
+        "inputExtensions": [
+          {
+            "botId": "d832a33f-28c2-4969-8ad0-4fee681dc5b4",
+            "canUpdateConfiguration": false,
+            "commands": [
+              {
+                "context": [
+                  "compose",
+                  "commandBox"
+                ],
+                "description": "Send praise to people",
+                "fetchTask": false,
+                "id": "createKudos",
+                "initialRun": false,
+                "taskInfo": {
+                  "height": "532",
+                  "title": "Send praise to people",
+                  "url": "https://praise.myanalytics.cdn.office.net/index.html?market={locale}&platform={hostClientType}&tid={tid}&userObjectId={userObjectId}&sessionId={sessionId}&messageId={parentMessageId}",
+                  "width": "600"
+                },
+                "title": "Send praise to people",
+                "type": "action"
+              }
+            ],
+            "fetchCommands": false,
+            "scopes": [
+              "personal",
+              "team",
+              "groupchat"
+            ]
+          }
+        ],
+        "isAppIOSAcquirable": true,
+        "isFullScreen": false,
+        "isFullTrust": true,
+        "isPinnable": true,
+        "isPreinstallable": true,
+        "isTeamsOwned": true,
+        "isTenantConfigurable": true,
+        "languageTag": "en-us",
+        "largeImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/apps/d832a33f-28c2-4969-8ad0-4fee681dc5b4_largeImage.png?v=1.2.6",
+        "longDescription": "Recognize your colleagues’ contributions using the praise messaging extension from Microsoft Viva Insights. Easily access the praise feature within Microsoft Teams, choose a celebratory badge, add an optional message, and share gratitude within the flow of work. Praise badges can be sent in a private chat or posted to Teams channels for wider visibility.",
+        "privacyUrl": "https://www.microsoft.com/privacy",
+        "publisherType": "FirstParty",
+        "shortDescription": "Show gratitude for your peers.",
+        "showLoadingIndicator": false,
+        "smallImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/apps/d832a33f-28c2-4969-8ad0-4fee681dc5b4_smallImage.png?v=1.2.6",
+        "supportedTenantRegions": [
+          "GCC"
+        ],
+        "termsOfUseUrl": "https://go.microsoft.com/fwlink/?linkid=2160711",
+        "validDomains": [
+          "praise.myanalytics.cdn.office.net",
+          "*.praise.myanalytics.cdn.office.net"
+        ],
+        "webApplicationInfo": {
+          "id": "3c896ded-22c5-450f-91f6-3d1ef0848f6e",
+          "resource": "https://substrate.office.com/weve"
+        }
+     },
             {
                 "manifestVersion": "1.16",
                 "version": "1.0.3",
