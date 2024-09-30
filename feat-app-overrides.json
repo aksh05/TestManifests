@@ -3382,8 +3382,149 @@
   "validDomains": [
     "*.box.com",
     "*.*.box.com"
-  ],
+  ]
 },
+      {
+        "manifestVersion": "1.7",
+        "id": "c33e8c41-5d2a-4cbe-86b0-b4b607ad4465",
+        "version": "2.0.0",
+        "name": "Kudos_test",
+        "accentColor": "#F9F9FA",
+        "amsSellerAccountId": 61649770,
+                          "supportedChannelTypes": [
+                    "SharedChannels",
+                    "PrivateChannels"
+                ],
+        "bots": [
+          {
+            "commandLists": [
+              {
+                "commands": [
+                  {
+                    "description": "Need help using Kudos?",
+                    "title": "Help"
+                  }
+                ],
+                "scopes": [
+                  "personal"
+                ]
+              },
+              {
+                "commands": [
+                  {
+                    "description": "Need help using Kudos?",
+                    "title": "Help"
+                  }
+                ],
+                "scopes": [
+                  "team"
+                ]
+              }
+            ],
+            "id": "b6928d38-daea-426c-9b28-fb0e78bd6bcc",
+            "isNotificationOnly": false,
+            "scopes": [
+              "personal",
+              "team"
+            ]
+          }
+        ],
+        "categories": [
+          "Communication",
+          "HumanResourcesAndRecruiting",
+          "Social"
+        ],
+        "connectors": [
+          {
+            "configurationUrl": "https://api-client.kudosnow.com/ms-teams-service-api-v2/connector-terms",
+            "connectorId": "2d8594a6-150b-408b-93c1-3af31742073d",
+            "scopes": [
+              "team"
+            ]
+          }
+        ],
+        "developerName": "Kudos Inc",
+        "developerUrl": "https://www.kudos.com",
+        "industries": [
+          "Other"
+        ],
+        "inputExtensions": [
+          {
+            "botId": "b6928d38-daea-426c-9b28-fb0e78bd6bcc",
+            "canUpdateConfiguration": false,
+            "commands": [
+              {
+                "context": [
+                  "compose"
+                ],
+                "description": "",
+                "fetchTask": true,
+                "id": "giveKudos",
+                "initialRun": false,
+                "parameters": [
+                  {
+                    "description": "",
+                    "name": "param",
+                    "title": "param"
+                  }
+                ],
+                "title": "⭐ Give Recognition",
+                "type": "action"
+              },
+              {
+                "context": [
+                  "message"
+                ],
+                "description": "",
+                "fetchTask": true,
+                "id": "kPlus",
+                "initialRun": false,
+                "parameters": [
+                  {
+                    "description": "",
+                    "name": "param",
+                    "title": "param"
+                  }
+                ],
+                "title": "K+",
+                "type": "action"
+              }
+            ],
+            "scopes": [
+              "team",
+              "personal"
+            ]
+          }
+        ],
+        "isMetaOSApp": false,
+        "largeImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/c33e8c41-5d2a-4cbe-86b0-b4b607ad4465_largeImage.png?v=2.0.0",
+        "lastUpdatedAt": "2020-07-28T12:18:28.440132Z",
+        "longDescription": "Kudos is the fun and effective solution for boosting morale, employee engagement and teamwork in your organization! Kudos for Teams connects your recognition messages in the Kudos web app with your interactions in MS Teams. ",
+        "officeAssetId": "WA200000849",
+        "permissions": [
+          "Identity",
+          "MessageTeamMembers"
+        ],
+        "privacyUrl": "https://www.kudos.com/privacy-policy/",
+        "restrictedTenantTypes": [
+          "Freemium"
+        ],
+        "screenshotUrls": [
+          "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/c33e8c41-5d2a-4cbe-86b0-b4b607ad4465/1.png?v=2.0.0",
+          "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/c33e8c41-5d2a-4cbe-86b0-b4b607ad4465/2.png?v=2.0.0",
+          "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/c33e8c41-5d2a-4cbe-86b0-b4b607ad4465/3.png?v=2.0.0",
+          "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/c33e8c41-5d2a-4cbe-86b0-b4b607ad4465/4.png?v=2.0.0"
+        ],
+        "shortDescription": "Send and receive Kudos recognition from within Teams.",
+        "smallImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/c33e8c41-5d2a-4cbe-86b0-b4b607ad4465_smallImage.png?v=2.0.0",
+        "termsOfUseUrl": "https://www.kudos.com/terms-of-service/",
+        "validDomains": [
+          "api-client.kudosnow.com",
+          "d13heqbqibxyrd.cloudfront.net",
+          "*.kudosnow.com"
+        ]
+      },
+          
      {
         "manifestVersion": "1.12",
         "id": "d832a33f-28c2-4969-8ad0-4fee681dc5b4",
