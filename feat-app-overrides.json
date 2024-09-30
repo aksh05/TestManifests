@@ -3201,6 +3201,189 @@
     "resource": "api://msteams-jira.services.atlassian.com/512b84d2-5840-45d6-8d01-5f073836d039"
   }
 },
+
+{
+  "manifestVersion": "1.9",
+  "id": "8d04bcf6-86d8-4ab1-9602-bc3b56e06c37",
+  "version": "2.3.1",
+  "name": "Box_test",
+  "accentColor": "#ffffff",
+  "amsSellerAccountId": 61011080,
+                "supportedChannelTypes": [
+                    "SharedChannels",
+                    "PrivateChannels"
+                ],
+  "bots": [
+    {
+      "id": "6b371dbf-6b35-40a0-bf75-615b61c8bdb8",
+      "isNotificationOnly": false,
+      "scopes": [
+        "team",
+        "groupchat"
+      ]
+    }
+  ],
+  "categories": [
+    "Communication",
+    "ContentManagement",
+    "Productivity"
+  ],
+  "defaultGroupCapability": {
+    "team": "bot"
+  },
+  "developerName": "Box",
+  "developerUrl": "https://www.box.com",
+  "galleryTabs": [
+    {
+      "canUpdateConfiguration": true,
+      "configurationUrl": "https://account.box.com/app-api/microsoft-teams/sandbox_NWCqGLjTs0k/configure?tenantId={tid}&groupId={groupId}&channelId={channelId}&msLocale={locale}&userObjectId={userObjectId}&chatId={chatId}",
+      "scopes": [
+        "team",
+        "groupchat"
+      ]
+    }
+  ],
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "6b371dbf-6b35-40a0-bf75-615b61c8bdb8",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Upload file to Box",
+          "fetchTask": true,
+          "id": "getUpload",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "",
+              "name": "param",
+              "title": "param"
+            }
+          ],
+          "taskInfo": {
+            "height": "550",
+            "title": "Upload File",
+            "url": "https://account.box.com/app-api/microsoft-teams/sandbox_NWCqGLjTs0k/message-extension/uploader",
+            "width": "880"
+          },
+          "title": "Upload file to Box",
+          "type": "action"
+        },
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Share file from Box",
+          "fetchTask": true,
+          "id": "getShare",
+          "initialRun": false,
+          "parameters": [
+            {
+              "description": "",
+              "name": "param",
+              "title": "param"
+            }
+          ],
+          "taskInfo": {
+            "height": "550",
+            "title": "Share File",
+            "url": "https://account.box.com/app-api/microsoft-teams/sandbox_NWCqGLjTs0k/message-extension/shared-link",
+            "width": "880"
+          },
+          "title": "Share file from Box",
+          "type": "action"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "type": "link",
+          "value": {
+            "domains": [
+              "*.box.com",
+              "*.box.net",
+              "*.boxcloud.com",
+              "*.boxcdn.net",
+              "*.boxcn.net",
+              "*.boxenterprise.net"
+            ]
+          }
+        }
+      ],
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isAppIOSAcquirable": true,
+  "isMetaOSApp": false,
+  "keywords": [
+    "Content Management",
+    "Box",
+    "Box for Teams"
+  ],
+  "languageTag": "en-US",
+  "largeImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/8d04bcf6-86d8-4ab1-9602-bc3b56e06c37_largeImage.png?v=2.3.1",
+  "lastUpdatedAt": "2023-06-16T23:16:18.8749873Z",
+  "longDescription": "The Box for Microsoft Teams integration helps businesses of all sizes securely manage and collaborate on content to drive more productive teamwork. Easily access and edit all of your Box content from Microsoft Teams and view contextual information on shared files with rich content cards in chats. Your content remains centralized in Box, but quickly available where collaboration happens in Microsoft Teams. For more information, please review our [support page](https://support.box.com/hc/en-us/articles/360044667034-Introducing-Box-for-Microsoft-Teams). An active Box account is required to use this app, please [Click here](https://www.box.com/cloud-content-management) to sign up for Box.",
+  "officeAssetId": "WA200001458",
+  "permissions": [
+    "Identity",
+    "MessageTeamMembers"
+  ],
+  "privacyUrl": "https://www.box.com/legal/privacypolicy",
+  "screenshotUrls": [
+    "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/8d04bcf6-86d8-4ab1-9602-bc3b56e06c37/1.png?v=2.3.1",
+    "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/8d04bcf6-86d8-4ab1-9602-bc3b56e06c37/2.png?v=2.3.1",
+    "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/8d04bcf6-86d8-4ab1-9602-bc3b56e06c37/3.png?v=2.3.1",
+    "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/8d04bcf6-86d8-4ab1-9602-bc3b56e06c37/4.png?v=2.3.1"
+  ],
+  "securityComplianceInfo": {
+    "status": "attested"
+  },
+  "shortDescription": "Your content securely extended to Microsoft Teams",
+  "smallImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/8d04bcf6-86d8-4ab1-9602-bc3b56e06c37_smallImage.png?v=2.3.1",
+  "staticTabs": [
+    {
+      "contentUrl": "https://account.box.com/app-api/microsoft-teams/sandbox_NWCqGLjTs0k/personalapp?appTabType=allfiles&tenantId={tid}&msLocale={locale}&userObjectId={userObjectId}&clientType={hostClientType}",
+      "entityId": "BoxPersonalTab1",
+      "name": "All Files",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://account.box.com/app-api/microsoft-teams/sandbox_NWCqGLjTs0k/personalapp?appTabType=allfiles&tenantId={tid}&msLocale={locale}&userObjectId={userObjectId}&clientType={hostClientType}"
+    },
+    {
+      "contentUrl": "https://account.box.com/app-api/microsoft-teams/sandbox_NWCqGLjTs0k/personalapp?appTabType=teamsfiles&tenantId={tid}&msLocale={locale}&userObjectId={userObjectId}&clientType={hostClientType}",
+      "entityId": "BoxPersonalTab2",
+      "name": "Teams Files",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://account.box.com/app-api/microsoft-teams/sandbox_NWCqGLjTs0k/personalapp?appTabType=teamsfiles&tenantId={tid}&msLocale={locale}&userObjectId={userObjectId}&clientType={hostClientType}"
+    },
+    {
+      "contentUrl": "https://account.box.com/app-api/microsoft-teams/sandbox_NWCqGLjTs0k/personalapp?appTabType=chatfiles&tenantId={tid}&msLocale={locale}&userObjectId={userObjectId}&clientType={hostClientType}",
+      "entityId": "BoxPersonalTab3",
+      "name": "Chat Files",
+      "scopes": [
+        "personal"
+      ],
+      "websiteUrl": "https://account.box.com/app-api/microsoft-teams/sandbox_NWCqGLjTs0k/personalapp?appTabType=chatfiles&tenantId={tid}&msLocale={locale}&userObjectId={userObjectId}&clientType={hostClientType}"
+    }
+  ],
+  "termsOfUseUrl": "https://www.box.com/legal/termsofservice",
+  "validDomains": [
+    "*.box.com",
+    "*.*.box.com"
+  ],
+},
      {
         "manifestVersion": "1.12",
         "id": "d832a33f-28c2-4969-8ad0-4fee681dc5b4",
