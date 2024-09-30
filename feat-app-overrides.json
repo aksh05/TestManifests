@@ -3524,6 +3524,182 @@
           "*.kudosnow.com"
         ]
       },
+                  {
+        "manifestVersion": "1.16",
+        "id": "99e46335-5250-4a68-8499-3e4f55e6f3f6",
+        "version": "3.2.0",
+        "name": "Updates",
+        "accentColor": "#5B5FC7",
+                          "supportedChannelTypes": [
+                    "SharedChannels",
+                    "PrivateChannels"
+                ],
+        "activities": {
+          "activityTypes": [
+            {
+              "description": "Assigned you as an update request viewer",
+              "templateText": "{user} assigned you as an update request viewer",
+              "type": "definitionReceived"
+            },
+            {
+              "description": "Receive an update",
+              "templateText": "{user} sent you an update to view",
+              "type": "reportReceived"
+            },
+            {
+              "description": "A received update was edited",
+              "templateText": "{user} edited an update",
+              "type": "reportEdited"
+            },
+            {
+              "description": "Someone liked your update",
+              "templateText": "{user} liked your update",
+              "type": "reportLiked"
+            },
+            {
+              "description": "Assigned an update to submit",
+              "templateText": "{user} wants you to submit an update",
+              "type": "definitionAssigned"
+            },
+            {
+              "description": "Have an update due soon",
+              "templateText": "You have an update due soon",
+              "type": "definitionExpiring"
+            },
+            {
+              "description": "You are reminded to submit an update",
+              "templateText": "{user} reminds you to submit an update",
+              "type": "occurrenceManualReminder"
+            },
+            {
+              "description": "Updates submission statistics",
+              "templateText": "Updates submission statistics, unsubmitted: {unsubmittedCount}, submitted: {submittedCount}.",
+              "type": "occurrenceSubmissionStatistics"
+            },
+            {
+              "description": "Someone left you a new comment",
+              "templateText": "{user} left you a new comment",
+              "type": "reportCommented"
+            },
+            {
+              "description": "Someone replied your comment",
+              "templateText": "{user} replied your comment",
+              "type": "commentReplied"
+            },
+            {
+              "description": "Assigned you as a request owner",
+              "templateText": "{user} assigned you as an update request owner",
+              "type": "definitionOwnerChanged"
+            },
+            {
+              "description": "Assigned you as a request collaborator",
+              "templateText": "{user} assigned you as an update request collaborator",
+              "type": "definitionCollaboratorChanged"
+            },
+            {
+              "description": "You are mentioned in a comment",
+              "templateText": "{user} mentioned you in the comment",
+              "type": "mentionedInReportComment"
+            }
+          ]
+        },
+        "bots": [
+          {
+            "id": "e9a6ecda-991e-45a5-890d-c68b5a6d7461",
+            "isNotificationOnly": true,
+            "scopes": [
+              "team",
+              "groupChat"
+            ],
+            "supportsCalling": false,
+            "supportsFiles": false,
+            "supportsVideo": false
+          }
+        ],
+        "categories": [
+          "Microsoft",
+          "Productivity"
+        ],
+        "developerName": "Microsoft Corporation",
+        "developerUrl": "https://www.office.com",
+        "inputExtensions": [
+          {
+            "botId": "e9a6ecda-991e-45a5-890d-c68b5a6d7461",
+            "canUpdateConfiguration": false,
+            "commands": [
+              {
+                "context": [
+                  "compose"
+                ],
+                "description": "Easily submit an update using a compose message extension",
+                "fetchTask": false,
+                "id": "workReportTask",
+                "initialRun": false,
+                "taskInfo": {
+                  "height": "700",
+                  "title": "Updates",
+                  "url": "https://reports.teams.microsoft.com:443/web/taskModule/?version=3.2.0&clientType={hostClientType}&theme={theme}&lng={locale}&userId={userObjectId}&tenantId={tid}&ringId={ringId}&subEntityId={subEntityId}#/taskModule",
+                  "width": "1000"
+                },
+                "title": "Submit update",
+                "type": "action"
+              }
+            ],
+            "fetchCommands": true,
+            "messageHandlers": []
+          }
+        ],
+        "isAppIOSAcquirable": true,
+        "isBlockable": true,
+        "isCoreApp": false,
+        "isFullScreen": true,
+        "isFullTrust": false,
+        "isPinnable": true,
+        "isPreinstallable": true,
+        "isTeamsOwned": true,
+        "isTenantConfigurable": true,
+        "keywords": [
+          "Report",
+          "Work Report",
+          "Daily Report",
+          "Weekly Report",
+          "Check in",
+          "Sync",
+          "Sync up"
+        ],
+        "languageTag": "en-us",
+        "largeImageUrl": "https://statics.teams.cdn.office.net/app-assets/preapproved_global/99e46335-5250-4a68-8499-3e4f55e6f3f6/99e46335-5250-4a68-8499-3e4f55e6f3f6_largeImage.png?v=3.2.0",
+        "longDescription": "Updates in Microsoft Teams is an app that saves people time and energy by helping them create, submit, and review all their updates right in the flow of work. Whether those are recurring processes that happen on a regular basis or in the moment updates that might be needed at any time, Updates makes it easy for you to manage these all in one place.",
+        "privacyUrl": "https://go.microsoft.com/fwlink/p/?linkid=857875",
+        "publisherType": "FirstParty",
+        "shortDescription": "Easily submit, create, and review employee updates in Microsoft Teams",
+        "showLoadingIndicator": false,
+        "smallImageUrl": "https://statics.teams.cdn.office.net/app-assets/preapproved_global/99e46335-5250-4a68-8499-3e4f55e6f3f6/99e46335-5250-4a68-8499-3e4f55e6f3f6_smallImage.png?v=3.2.0",
+        "staticTabs": [
+          {
+            "contentUrl": "https://reports.teams.microsoft.com:443/web/?version=3.2.0&clientType={hostClientType}&theme={theme}&lng={locale}&userId={userObjectId}&tenantId={tid}&ringId={ringId}&subEntityId={subEntityId}",
+            "entityId": "workreport",
+            "name": "Updates",
+            "scopes": [
+              "personal"
+            ]
+          },
+          {
+            "entityId": "conversations",
+            "scopes": [
+              "personal"
+            ]
+          }
+        ],
+        "termsOfUseUrl": "https://support.microsoft.com/office/application-end-user-notice-bc6027fe-68c3-4758-a70d-cfe97c43b4e2",
+        "validDomains": [
+          "reports.teams.microsoft.com"
+        ],
+        "webApplicationInfo": {
+          "id": "ea62c1c6-550b-4238-8ea7-c55a85d86be8",
+          "resource": "https://reports.teams.microsoft.com"
+        }
+                  },
           
      {
         "manifestVersion": "1.12",
