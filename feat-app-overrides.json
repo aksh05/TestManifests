@@ -3528,7 +3528,7 @@
         "manifestVersion": "1.16",
         "id": "99e46335-5250-4a68-8499-3e4f55e6f3f6",
         "version": "3.2.0",
-        "name": "Updates",
+        "name": "Updates_test",
         "accentColor": "#5B5FC7",
                           "supportedChannelTypes": [
                     "SharedChannels",
