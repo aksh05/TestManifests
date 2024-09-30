@@ -2605,7 +2605,144 @@
     "resource": "https://tasks.office.com"
   }
   },
-
+{
+  "manifestVersion": "1.16",
+  "id": "81fef3a6-72aa-4648-a763-de824aeafb7d",
+  "version": "1.1.9",
+  "name": "Forms_test",
+  "accentColor": "#008272",
+  "amsSellerAccountId": 10100100,
+                "supportedChannelTypes": [
+                    "SharedChannels",
+                    "PrivateChannels"
+                ],
+  "bots": [
+    {
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "description": "Example: What color do you like? Red, Green",
+              "title": "Your question? Option1, Option2"
+            },
+            {
+              "description": "Get quick answers and advanced tips",
+              "title": "Help"
+            }
+          ],
+          "scopes": [
+            "team"
+          ]
+        }
+      ],
+      "id": "0af95b67-5890-4306-9c1c-a8591cead09e",
+      "isNotificationOnly": false,
+      "scopes": [
+        "groupchat",
+        "team"
+      ]
+    }
+  ],
+  "categories": [
+    "Communication",
+    "Productivity",
+    "Utilities"
+  ],
+  "connectors": [
+    {
+      "configurationUrl": "https://example.com",
+      "connectorId": "e68a6156-c7ca-42c6-b2e2-134ba4b7b887",
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "developerName": "Microsoft Corporation",
+  "developerUrl": "https://support.office.com/forms",
+  "disabledScopes": [
+    "PrivateChannel"
+  ],
+  "galleryTabs": [
+    {
+      "canUpdateConfiguration": false,
+      "configurationUrl": "https://forms.office.com/pages/teamsconfigpage.aspx?lang={locale}&tid={tid}&groupId={groupId}&upn={upn}&teamsTheme={theme}",
+      "context": [
+        "channelTab",
+        "meetingChatTab",
+        "meetingDetailsTab",
+        "meetingSidePanel"
+      ],
+      "scopes": [
+        "groupchat",
+        "team"
+      ]
+    }
+  ],
+  "industries": [
+    "Other"
+  ],
+  "inputExtensions": [
+    {
+      "botId": "0af95b67-5890-4306-9c1c-a8591cead09e",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "context": [
+            "compose"
+          ],
+          "description": "Collect real-time data with Forms poll",
+          "fetchTask": true,
+          "id": "collectFormData",
+          "initialRun": false,
+          "title": "Create a new poll",
+          "type": "action"
+        }
+      ],
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "isAppIOSAcquirable": true,
+  "isBlockable": true,
+  "isFullScreen": false,
+  "isFullTrust": false,
+  "isMetaOSApp": true,
+  "isTeamsOwned": true,
+  "isTenantConfigurable": true,
+  "languageTag": "en-us",
+  "largeImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/81fef3a6-72aa-4648-a763-de824aeafb7d_largeImage.png?v=1.1.9",
+  "lastUpdatedAt": "2024-05-24T14:41:36.3647599Z",
+  "longDescription": "Forms empower you to collect better data and make better decisions. Use Forms in Microsoft Teams to:\n* Create effective forms with easy-to-use tools and clear design suggestions.\n* Get quick feedback or collect more detailed information with branching questions.\n* Instantly visualize response data and advanced analysis.\n* Stay connected from any browser on any device—no matter where you are.\n* Assess student progress with quizzes and easily export answers to Excel.\n* Launch a poll in your meeting/chat to collect real-time feedbacks and better engage with participants.\n\n[Get Help](https://support.microsoft.com/forms)",
+  "meetingExtensionDefinition": {
+    "isAnonymousAccessAllowed": false,
+    "scenes": []
+  },
+  "officeAssetId": "WA200007012",
+  "permissions": [],
+  "privacyUrl": "https://www.microsoft.com/privacy",
+  "publisherType": "FirstParty",
+  "screenshotUrls": [
+    "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/81fef3a6-72aa-4648-a763-de824aeafb7d/1.png?v=1.1.9",
+    "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/81fef3a6-72aa-4648-a763-de824aeafb7d/2.png?v=1.1.9",
+    "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/81fef3a6-72aa-4648-a763-de824aeafb7d/3.png?v=1.1.9"
+  ],
+  "shortDescription": "Easily create surveys, quizzes and polls.",
+  "smallImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/81fef3a6-72aa-4648-a763-de824aeafb7d_smallImage.png?v=1.1.9",
+  "supportedTenantRegions": [
+    "GCC"
+  ],
+  "termsOfUseUrl": "https://go.microsoft.com/fwlink/?linkid=2174878",
+  "validDomains": [
+    "forms.office.com",
+    "forms.cloud.microsoft"
+  ],
+  "webApplicationInfo": {
+    "id": "c9a559d2-7aab-4f13-a6ed-e7e9c52aec87",
+    "resource": "https://forms.office.com"
+  }
+},
 {
   "manifestVersion": "1.16",
   "id": "c3a1996d-db0f-4857-a6ea-7aabf0266b00",
