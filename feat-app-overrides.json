@@ -4143,9 +4143,7 @@
                 "id": "5a0fd958-ae20-412e-9e7a-8b2d2c7c9a45",
                 "name": "CoCounsel",
                 "smallImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/1542629c-01b3-4a6d-8f76-1938b779e48d_smallImage.png?v=2.0.6"
-            }
-        ]
-    },
+            },
           {
         "manifestVersion": "1.16",
         "id": "1250b735-e9df-4d5b-ae82-da96c55c64e4",
@@ -5284,84 +5282,7 @@
             "webApplicationInfo": {
               "id": "e9f5cb58-89eb-4f80-9a6c-b73823b62176",
               "resource": "https://app.standuply.com/external-login/microsoft"
-            }
-          },
-          {
-            "manifestVersion": "1.16",
-            "id": "1250b735-e9df-4d5b-ae82-da96c55c64e4",
-            "version": "1.1.2",
-            "name": "Standup.ly - Poll & Survey机器人",
-            "accentColor": "#214fac",
-            "amsSellerAccountId": 69700840,
-            "authorization": {
-              "permissions": {
-                "resourceSpecific": []
-              }
-            },
-            "bots": [
-              {
-                "id": "e9f5cb58-89eb-4f80-9a6c-b73823b62176",
-                "isNotificationOnly": false,
-                "scopes": [
-                  "team",
-                  "groupChat",
-                  "personal"
-                ],
-                "supportsFiles": true
-              }
-            ],
-            "categories": [
-              "Productivity",
-              "ProjectManagement",
-              "WorkflowAndBusinessManagement",
-              "Education"
-            ],
-            "developerName": "Standuply Inc.",
-            "developerUrl": "https://standuply.com",
-            "devicePermissions": [
-              "Notifications"
-            ],
-            "industries": [
-              "Education",
-              "ProfessionalServices"
-            ],
-            "isMetaOSApp": true,
-            "keywords": [
-              "standup",
-              "surveys",
-              "polls"
-            ],
-            "languageTag": "zh-cn",
-            "largeImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/1250b735-e9df-4d5b-ae82-da96c55c64e4_largeImage.png?v=1.1.2",
-            "lastUpdatedAt": "2024-04-18T08:41:29.1920665Z",
-            "longDescription": "每日异步会议的站立机器人。自动化敏捷活动、人力资源流程和开发工作流程。受到 Intel、IBM、Adobe 等 100,000 支团队的信任。\n\n🔥 **热门功能** 🔥 ：\n\n⚒️ **自动化** 每日汇报签到，回顾，360度反馈评审，1对1，规划扑克，待办事项精选和其他工作流程。\n\n✅ 管理个人待办事项和团队任务。\n\n⚙️ **集中的账户管理** 全组织范围的控制，为整个组织提供便捷的管理和采用。\n\n📅 运行定期或异步会议**用户的时区**。\n\n💬 使用 **您的语言** 定制问题，支持并改善团队文化。\n\n✍🏻 **跟踪** 工作进展，业务指标，障碍和团队幸福感 **24x7**。\n\n📊 **与** 流行的项目管理软件和其他团队工具的 **集成**，通过外部数据丰富您的报告，提供更多的进展可见性。\n\n📥 **从您自己的数据库中提取数据** 并与团队和利益相关者分享关键指标。\n\n**为远程团队设计 - 面向企业设计**：  - 在 Microsoft Teams (DM/channel)、电子邮件或 Web 上获取生产力摘要报告； - 跟踪业务指标和 OKR、团队进展、绩效和幸福感； - 分享目标、待办事项列表、任务、状态会议记录、日历议程、进行投票、头脑风暴； - 使用多管理员访问与团队共享权限。  **您在 Microsoft Teams 中的项目管理数字助手**  把 Standuply 想象成成千上万团队中工作的 Scrum Master 或项目经理，并且他只应用最佳实践。 因此，您的敏捷或看板流程可以自动运行，节省时间并避免昂贵的错误。  欢迎来到 Standuply！无论您是新手还是经验丰富，我们用户友好的应用提供了无缝的注册流程，一个用于轻松入门的[\"入门指南\"](https://help.standuply.com/en/collections/1571862-how-to-start-using-standuply)，并通过我们的[\"联系我们\"](mailto:hello@standuply.com)链接快速获得支持。此外，请阅读从 Standuply 冠军中挑选的[最佳实践](https://standuply.com/blog/top-10-standuply-product-adoption-tips/?utm_source=beamer&utm_medium=sidebar&utm_campaign=Standuply-Adoption-Tips&utm_content=textlink/)。需要帮助吗？我们全面的[\"帮助中心\"](http://help.standuply.com)已覆盖您。加入我们，共同努力提高团队的生产力吧！",
-            "mpnId": "6481796",
-            "officeAssetId": "WA200003001",
-            "permissions": [],
-            "privacyUrl": "https://standuply.com/privacy-policy",
-            "screenshotUrls": [
-              "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/1250b735-e9df-4d5b-ae82-da96c55c64e4/1.png?v=1.1.2",
-              "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/1250b735-e9df-4d5b-ae82-da96c55c64e4/2.png?v=1.1.2",
-              "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/1250b735-e9df-4d5b-ae82-da96c55c64e4/3.png?v=1.1.2",
-              "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/1250b735-e9df-4d5b-ae82-da96c55c64e4/4.png?v=1.1.2",
-              "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/1250b735-e9df-4d5b-ae82-da96c55c64e4/5.png?v=1.1.2"
-            ],
-            "securityComplianceInfo": {
-              "mcasId": "42544",
-              "status": "attested"
-            },
-            "shortDescription": "增强站立会议(standup)，回顾(retro)，待办计划(ToDo)，20+ 敏捷和人力资源工作流程",
-            "smallImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/1250b735-e9df-4d5b-ae82-da96c55c64e4_smallImage.png?v=1.1.2",
-            "termsOfUseUrl": "https://standuply.com/terms",
-            "validDomains": [
-              "*.standuply.com"
-            ],
-            "videoUrl": "https://youtu.be/_DZWDw6aMoE",
-            "webApplicationInfo": {
-              "id": "e9f5cb58-89eb-4f80-9a6c-b73823b62176",
-              "resource": "https://app.standuply.com/external-login/microsoft"
-            }
-          }
-        ]
-      },
+      }
+    }
+  ]
 }
