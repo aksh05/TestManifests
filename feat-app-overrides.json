@@ -4191,7 +4191,7 @@
           "surveys",
           "polls"
         ],
-                  "supportedChannelTypes": [
+        "supportedChannelTypes": [
                 "SharedChannels",
                 "PrivateChannels"
               ],
