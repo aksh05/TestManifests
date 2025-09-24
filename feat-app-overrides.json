@@ -240,6 +240,10 @@
     "cdn.presentations.ai",
     "*.presentations.ai"
   ],
+                              "supportedChannelTypes": [
+                "SharedChannels",
+                "PrivateChannels"
+              ],
   "webApplicationInfo": {
     "id": "c7975ce9-00f2-4e29-a2ca-2639b8d9b65f",
     "resource": "https://login.microsoftonline.com"
@@ -1427,6 +1431,10 @@
           "*.herm.is",
           "token.botframework.com"
         ],
+                                    "supportedChannelTypes": [
+                "SharedChannels",
+                "PrivateChannels"
+              ],
         "videoUrl": "https://www.youtube.com/watch?v=uSoq5Or-Sc8",
         "webApplicationInfo": {
           "id": "7d88764a-8601-4e36-8be4-157eb48b5302",
@@ -2506,6 +2514,10 @@
           "help.tikit.ai",
           "token.botframework.com"
         ],
+                                    "supportedChannelTypes": [
+                "SharedChannels",
+                "PrivateChannels"
+              ],
         "videoUrl": "https://youtu.be/DIzGyB_KObc?si=Z-SfE5UbouHfek0-",
         "webApplicationInfo": {
           "id": "b13c40ee-e073-459e-96b5-3f3cca046a37",
